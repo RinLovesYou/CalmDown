@@ -16,7 +16,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
-[assembly: MelonInfo(typeof(CalmDownMod), "CalmDown", "1.0")]
+[assembly: MelonInfo(typeof(CalmDownMod), "CalmDown", "1.0", "RinLovesYou")]
 [assembly: MelonGame("VRChat", "VRChat")]
 
 // Setting ComVisible to false makes the types in this assembly not visible
