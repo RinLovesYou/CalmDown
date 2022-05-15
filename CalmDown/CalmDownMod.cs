@@ -6,7 +6,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.VR;
 using VRC.UI.Core;
+using UnityEngine.XR;
 using static MelonLoader.MelonLogger;
 
 namespace CalmDown
@@ -17,6 +19,7 @@ namespace CalmDown
         private static MelonPreferences_Entry<bool> Enabled = CalmDownCat.CreateEntry("Enable PanicButton suppression (Requires Restart)", true);
         public override void OnApplicationStart()
         {
+            if (XRDevice.isPresent) return;
             MelonCoroutines.Start(WaitForUiManagerInit());
         }
 
